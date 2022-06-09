@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <!--
-    Design by: Joao Garduño Salgado
-    Date: 19-abr-2022
-    Version: 1.0
 
-    Project Name: Store Cloth
-    Description: This a store of cloth 
-    Release Date: 
+Design by: Joao Garduño Salgado
+Date: 19-abr-2022
+Version: 1.0
+
+Project Name: Store Cloth
+Description: This a store of cloth 
+Release Date: 
+
 -->
 <html lang="en">
 <head>
@@ -20,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <!-- FAVICON -->
     <!-- ICONS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script> -->
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- <title>Store Cloth | Welcome to The fashion way</title> -->
@@ -37,11 +40,14 @@
         
         <!-- NAV -->
         <nav class="navContent">
+            <!-- BURGER -->
             <div class="nav__burger">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
             </div>
+
+            <!-- MENU LINKS -->
             <div class="nav_menu">
                 <ul class="nav__menu--ul">
                     <li class="nav__menu--li">
@@ -70,26 +76,83 @@
                     <li class="nav__ul-li"><a href="#" class="nav__ul--a">account</a></li>    
                 </ul>
             </div>
+
+            <!-- LOGO -->
             <div class="nav__logo">
                 <a href=""><img src="./assets/img/logo/wear-clothe_logo.png" alt="Wear_Clothes_Image"></a>
             </div>
-        </nav>
-        <div class="header__icons">
-            <span class="header__icons--span"><img src="./assets/icons/search-icon.svg" alt="" class="header__icons--img"></span>
-            <span class="header__icons--span"><img src="./assets/icons/user-icon.svg" alt="" class="header__icons--img"></span>
-            <span class="header__icons--span"><img src="./assets/icons/shopping-bag-icon.svg" alt="" class="header__icons--img"></span>
-        </div>        
+
+            <!-- ICONS - SEARCH, USER,  -->
+            <div class="header__icons">
+                <span class="header__icons--span"><img src="./assets/icons/search-icon.svg" alt="" class="header__icons--img"></span>
+                <span class="header__icons--span"><img src="./assets/icons/user-icon.svg" alt="" class="header__icons--img"></span>
+                <span class="header__icons--span"><img src="./assets/icons/shopping-bag-icon.svg" alt="" class="header__icons--img"></span>
+            </div> 
+        </nav>               
     </header>
 
     <!-- MAIN -->
     <main class="mainContent">
+        <!-- BANNER - SLIDER -->
         <div class="bannerContent">
-            <div class="banner_slider"></div>
+            <div id="bannerSlider" class="banner__slider">
+
+                <!-- CONTENT 1 -->
+                <div class="banner__slider--content">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                    <div class="banner__slider--info">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corrupti.</p>
+                        <button type="button">see more</button>
+                    </div>
+                </div>
+
+                <!-- CONTENT 2 -->
+                <div class="banner__slider--content">
+                    <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
+                    <div class="banner__slider--info">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corrupti.</p>
+                        <button type="button">see more</button>
+                    </div>
+                </div>
+
+                <!-- CONTENT 3 -->
+                <div class="banner__slider--content">
+                    <img src="https://images.unsplash.com/photo-1571019613576-2b22c76fd955?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                    <div class="banner__slider--info">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corrupti.</p>
+                        <button type="button">see more</button>
+                    </div>
+                </div>
+
+                <!-- CONTENT 4 -->
+                <div class="banner__slider--content">
+                    <img src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                    <div class="banner__slider--info">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corrupti.</p>
+                        <button type="button">see more</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUTTONS - CONTROL -->
+            <div id="btn-right" class="slider-btn slider__btn--right">&#62;</div>
+            <div id="btn-left" class="slider-btn slider__btn--left">&#60;</div>        
         </div>
-        <section class="sectionContent feature"></section>
-        <section class="sectionContent categories"></section>
-        <section class="sectionContent socialmedia"></section>
+
+        <!-- FEATURES -->
+        <section class="sectionContent feature-section"></section>
+
+        <!-- CATEGORIES -->
+        <section class="sectionContent categories-section"></section>
+        <!-- SOCIAL MEDIA -->
+        <section class="sectionContent socialmedia-section"></section>
     </main>
     <footer class="footerContent"></footer>
+    <!-- <script src="app.js"></script> -->
+    <script src="./js/slider.js"></script>
 </body>
 </html>
